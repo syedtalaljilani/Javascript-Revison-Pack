@@ -6,6 +6,7 @@
  const topics  = {
     "topic 01":"Console,Alert,Prompt",
     "Topic 02":"Var Let Const",
+    "Topic 02":"Datatype and Operators",
  };
 
 ```
