@@ -84,3 +84,24 @@ console.log('3'/'3'); // convert into int -> 1
 console.log('20'%6); // string convert into int ->2 
 
 console.log('20'%'6'); // convert into int -> 2
+
+
+// js -> 1 -> true 0 -> false
+// proof of true and false 
+console.log(true + 10); // 11
+
+console.log(false +10); // 10 
+
+console.log(true+true); // 2
+
+console.log(false + false); // 0
+
+console.log(true && true); // true and true = true
+
+console.log(true && false ) // true and false = false
+
+console.log(false && false); // false and false = false
+
+console.log(true || true); // true or true = true 
+
+console.log(true || false); //true or false = true
