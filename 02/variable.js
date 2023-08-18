@@ -20,3 +20,8 @@ console.log(data);
 // in other language we assign int age = 10; but in javascript we use var age =10;
 
 
+// name conversion 
+// firstname (lowercase)
+// first_name (snakecase)
+// FirstName (Pascal Case) (Used for Classes)
+// firstName (cammel Case) (Used For Variables)
