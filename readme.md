@@ -11,8 +11,7 @@
     
  };
 
-```
-- I use node to run JavaScript 
+``` 
 - Install Nodejs or use Browser.
 - For Example node helloworld.js is used to run javascript.
 ### **Learn From Piyush Garg**
