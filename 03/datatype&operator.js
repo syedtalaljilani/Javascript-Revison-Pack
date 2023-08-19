@@ -117,3 +117,13 @@ console.log(undefined-NaN); // NaN
 console.log(NaN+NaN); // NaN
 console.log(NaN-NaN); // NaN
 console.log(undefined-undefined);//NaN
+console.log(NaN-null);//NaN
+console.log(undefined-null);//NaN
+console.log(undefined+undefined);//NaN undefined is not a number
+console.log(null+null); // 0
+console.log(null-null); // 0  proof null = 0
+console.log(undefined*null); //NaN
+console.log('hello'*null); // NaN
+console.log(54*null); // 0
+console.log(true*null); // 1*0 = 0
+
