@@ -40,7 +40,6 @@ console.log(person) // name = New Name
 
 
 // console.log(name); object is not iterable which means destructuring is not possible
-
 // Operators 
 
 // + (add)
@@ -105,3 +104,15 @@ console.log(false && false); // false and false = false
 console.log(true || true); // true or true = true 
 
 console.log(true || false); //true or false = true
+
+// not a number and typeof typeof
+
+var nan = NaN; // not a number 
+console.log(typeof(nan)); // number
+var number = 200;
+console.log(typeof(typeof(number)));// string
+console.log(undefined+NaN); // undefined = 0  0+NaN = NaN
+
+console.log(undefined-NaN); // NaN
+console.log(NaN+NaN); // NaN
+console.log(NaN-NaN); // NaN
