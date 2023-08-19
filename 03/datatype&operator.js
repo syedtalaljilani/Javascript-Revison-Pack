@@ -112,7 +112,8 @@ console.log(typeof(nan)); // number
 var number = 200;
 console.log(typeof(typeof(number)));// string
 console.log(undefined+NaN); // undefined = 0  0+NaN = NaN
-
+console.log(undefined*NaN); //NaN
 console.log(undefined-NaN); // NaN
 console.log(NaN+NaN); // NaN
 console.log(NaN-NaN); // NaN
+console.log(undefined-undefined);//NaN
