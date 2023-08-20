@@ -11,6 +11,9 @@
     "Topic 05":"Logical and Relational Operator",
     "Topic 06":"for , do while ,while loops",
     "Topic 07":"Function",
+    "Topic 08":"Arrow Function",
+    "Topic 09":"High Order function",
+    "Topic 10":"Array"
     
  };
 
