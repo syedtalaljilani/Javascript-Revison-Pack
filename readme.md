@@ -14,6 +14,9 @@
     "Topic 08":"Arrow Function",
     "Topic 09":"High Order function",
     "Topic 10":"Array"
+    "Topic 11":"Array High Order Function"
+    "Topic 12":"Dom"
+    "Topic 13":"QuerySelector"
     
  };
 
