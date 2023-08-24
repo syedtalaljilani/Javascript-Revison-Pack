@@ -16,3 +16,4 @@ function modechange (){
         btn.style=`background-color:bluevoilet; color:white;`;
     }
 }
+btn.addEventListener('click',modechange);
