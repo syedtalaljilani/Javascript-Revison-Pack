@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+    <title>Guess The Number</title>
+</head>
+<body>
+    <h1>Guess The Number</h1>
+    <h2 id="points"></h2>
+    <p>
+        Note: Range of Number is 1 to 5
+    </p>
+   <div class="grid">
+    <input type="text" id="number" placeholder="Enter Your Number">
+    <button id="check">Check</button>
+    <button id="hint">Hint</button>
+   </div>
+    <p class="hint"></p>
+    <div class="result">
+        <p class="winner">You Won 🙌</p>
+        <p class="loser">Computer Won 😒</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

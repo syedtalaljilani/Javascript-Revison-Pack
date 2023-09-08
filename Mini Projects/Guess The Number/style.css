@@ -1,0 +1,49 @@
+body{
+    font-family: 'Aladin', cursive;
+    background-color: #212121;
+    color: white;
+}
+h1,p{
+    text-align: center;
+}
+button{
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+input{
+    border: none;
+    padding: 3px;
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+}
+p[class='winner']{
+    background-color:lightgreen;
+    border-radius: 12px;
+    display: none;
+    margin: 20px;
+}
+p[class='loser']{
+    background-color:lightcoral;
+    border-radius: 12px;
+    display: none;
+    margin: 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+button:disabled{
+    background-color:white;
+    color: black;
+}
+h2{
+    text-align: center;
+    color: blueviolet;
+}

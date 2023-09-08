@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #212121;
+            color:white;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p class="number1">1</p>
+        <p class="number2">2</p>
+        <p class="number3">3</p>
+        <p class="number4">4</p>
+    </div>
+    <script>
+        const parent = document.querySelector('.parent');
+        console.log(parent.children[1].innerHTML);
+        parent.children[1].style.color='pink'
+        parent.children[2].style=`border:1px solid black; background-color:purple; color:white;`
+        console.log(parent.firstElementChild.innerHTML);
+        console.log(parent.lastElementChild.innerHTML);
+        const child = document.querySelector('.number1');
+        console.log(child.innerHTML);
+        console.log(child.parentElement);
+        console.log(child.nextSibling); // First node is element second is text
+        console.log(child.nextElementSibling.innerHTML);
+        console.log(parent.childNodes); 
+    </script>
+    <script src="Create.js"></script> 
+</body>
+</html>
