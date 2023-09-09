@@ -6,58 +6,40 @@ const loser = document.querySelector('.loser');
 const pointval = document.querySelector('#points');
 var guess='' ,prev=0,hintcount=0,points=0;
 btn.addEventListener('click',()=>{
-  localStorage.setItem('prev',prev);
   loser.style=`display:none`;
   winner.style=`display:none`;
   btn2.removeAttribute("disabled");
     var number = document.querySelector('#number').value;
-    prev = localStorage.prev;
-    if(number==''){
-      alert('Enter Number');
-    }
-    guess = Math.round(Math.random()*(5-1) + 1);
-    if(prev.length==0){
+    if(number=='0'||number==''){
+      alert('invalid');
+    }else{
+      guess = Math.round(Math.random()*(5-1) + 1);
+      alert(guess);
       if(guess==number){
+        alert('Win')
         points=points+10;
-        alert(points);
         pointval.innerHTML="Points: "+points;
-        winner.style=`display:block;`;
-        loser.style=`display:none;`;
-        document.setItem('points',points);
-      }
-      if(guess!==number){
-        loser.style=`display:block;`;
-        winner.style=`display:none;`;
-      }
-    }
-    else{
+      }else
       if(prev==number){
-        alert(number);
-        winner.style=`display:block;`;
-        loser.style=`display:none;`;
-        if(hintcount==0 || hintcount==1){
-          points=points+10;
-          pointval.innerHTML="Points: "+points;
-          document.setItem('points',points);  
-        }
-        else{
-          points=points;
-          pointval.innerHTML="Points: "+points;
-          document.setItem('points',points);
-        }
-      }
-      else{
-        loser.style=`display:block;`;
-        winner.style=`display:none;`;
+        alert('win');
+        pointval.innerHTML="Points: "+points;
+        prev=0;
+        localStorage.setItem('prev',prev);
+      }else
+        {
+        alert('lose');
       }
     }
+    
+
+    
 });
 btn2.addEventListener('click',()=>{
   loser.style=`display:none`;
   winner.style=`display:none`;
   btn2.setAttribute("disabled", "true");
+  guess = Math.round(Math.random()*(5-1) + 1);
   if(hintcount==0){
-    guess = Math.round(Math.random()*(5-1) + 1);
     prev = guess;
     textnode = document.createTextNode=prev;
     hint.append('Guess Number is '+textnode);
@@ -68,7 +50,6 @@ btn2.addEventListener('click',()=>{
     if(points==0 && prev>0){
       document.body.innerHTML='<h1>Game Over</h1>';
     }else{
-    guess = Math.round(Math.random()*(5-1) + 1);
     prev = guess;
     textnode = document.createTextNode=prev;
     hint.innerHTML='';
