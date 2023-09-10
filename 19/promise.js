@@ -9,3 +9,8 @@ async function getdata(){
 }
 getdata();
 // console.log(getdata) //promise
+// without async await using promise
+fetch('https://jsonplaceholder.typicod.com/todos')
+.then((data)=>{console.log(data)})
+.catch((err)=>{console.log(err)}); // not recieved beacuse url is wrong
+

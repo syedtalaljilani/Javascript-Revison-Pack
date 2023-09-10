@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: white;
+            font-family: monospace;
+        }
+        .data{
+            display: grid;
+            gap: 40px;
+            grid-template-columns: 1fr 1fr;
+        }
+        main{
+            display: grid;
+            place-items: center;
+            grid-template-columns: 1fr;
+            gap:50px;
+        }
+        button{
+            width: 120px;
+            height: 30px;
+            border-radius: 10px;
+            color:white;
+            border: none;
+            background-color: rebeccapurple;
+        }
+        input{
+            width: 150px;
+            border-radius: 5px;
+            border:none;
+            height: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <input type="text" placeholder="Enter Your City">
+        <button>Search</button>
+        <div class="data">
+            <h1 id="city"></h1>
+            <h2 id="temp"></h2>
+            <p id="lt"></p>
+            <h3 id="regionname"></h3>
+        </div>
+    </main>
+    <!-- This is CDN (First Method)-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- pnpm i axois -S (Second Method)-->
+    <!-- <script src="./node_modules/axios/dist/axios.min.js"></script> -->
+    <script src="apicalling.js"></script>
+</body>
+</html>
