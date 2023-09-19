@@ -13,10 +13,21 @@
     "Topic 07":"Function",
     "Topic 08":"Arrow Function",
     "Topic 09":"High Order function",
-    "Topic 10":"Array"
-    "Topic 11":"Array High Order Function"
-    "Topic 12":"Dom"
-    "Topic 13":"QuerySelector"
+    "Topic 10":"Array",
+    "Topic 11":"Array High Order Function",
+    "Topic 12":"Dom",
+    "Topic 13":"QuerySelector",
+    "Topic 14":"GetElementById",
+    "Topic 15":"GetElementByClassName",
+    "Topic 16":"EventListner",
+    "Topic 17":"CreateElement",
+    "Topic 18":"Edit&Remove Element",
+    "Topic 19":"Promise",
+    "Topic 20":"Api Calling",
+    "Topic 21":"WebApi",
+    "Topic 22":"Closure",
+    "Topic 23":"Curry",
+    "Topic 24":"Composition",
     
  };
 
