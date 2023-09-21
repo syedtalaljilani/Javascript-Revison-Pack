@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Full Page Slider</title>
+</head>
+<body>
+    <div id="slidercontainer" class="grid ">
+        <div id="imgcontainer1" class="grid w-fit">
+            <img class="w-[100vw] h-[100vh]" src="./Assets/img01.jpg" alt="">
+        </div>
+        <div id="imgcontainer2" class="hidden">
+            <img class="w-[100vw] h-[100vh]" src="./Assets/img02.jpg" alt="">
+        </div>
+        <div id="imgcontainer3" class="hidden">
+            <img class="w-[100vw] h-[100vh]" src="./Assets/img03.jpg" alt="">
+        </div>
+      <div class="btncontainer">
+        <button id="Previous" class="absolute top-[300px] bg-transparent rounded-full text-white left-[100px] sm:w-[10%] w-[20%] h-[5%] ring-2 ring-white">Previous</button>
+      <button id="Next" class="absolute top-[300px] bg-transparent rounded-full text-white right-[100px] sm:w-[10%] w-[20%] h-[5%] ring-2 ring-white">Next</button> 
+      </div>
+    </div>
+    <script src="slider.js"></script>
+</body>
+</html>
